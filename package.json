@@ -1,0 +1,18 @@
+{
+  "name": "sudan-stolen-cars-website",
+  "version": "1.0.0",
+  "description": "موقع تطبيق إيجاد السيارات المسروقة في السودان",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sudan",
+    "stolen",
+    "cars",
+    "app",
+    "website"
+  ],
+  "author": "Manus AI",
+  "license": "MIT"
+}

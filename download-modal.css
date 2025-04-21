@@ -1,0 +1,165 @@
+/* أنماط النافذة المنبثقة للتحميل المتقدم */
+.download-modal {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.download-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #D21034;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #000;
+}
+
+.download-options-advanced {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.download-option {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.download-option h4 {
+    color: #D21034;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.download-option p {
+    margin-bottom: 15px;
+}
+
+.api-info, .device-compatibility {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.api-info h4, .device-compatibility h4 {
+    color: #007229;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.api-info a {
+    color: #D21034;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.api-info a:hover {
+    text-decoration: underline;
+}
+
+/* أنماط قسم المطورين */
+.developers {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.developer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.api-info-card, .github-info-card {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.api-info-card h3, .github-info-card h3 {
+    color: #D21034;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.api-info-card a, .github-info-card a {
+    color: #D21034;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.api-info-card a:hover, .github-info-card a:hover {
+    text-decoration: underline;
+}
+
+.api-info-card .secondary-btn, .github-info-card .secondary-btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* تحسينات لقسم التحميل */
+.download-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.version-info {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* تحسينات للأجهزة المحمولة */
+@media (max-width: 768px) {
+    .download-modal-content {
+        width: 95%;
+        padding: 20px;
+        margin: 10% auto;
+    }
+    
+    .download-options-advanced {
+        flex-direction: column;
+    }
+    
+    .developer-info {
+        flex-direction: column;
+    }
+}

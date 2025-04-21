@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "143094932761",
+    "project_id": "omer-car",
+    "storage_bucket": "omer-car.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143094932761:android:4259e91b00871383e25188",
+        "android_client_info": {
+          "package_name": "com.sudanstolencarapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD_BrbwHU9NS79gf-rhBGzC-yF1g_-zno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+version: '3'
+services:
+  # خدمة الخادم الخلفي
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - MONGODB_URI=mongodb://mongo:27017/sudanstolencarapp
+      - JWT_SECRET=SudanStolenCarsSecretKey2025
+    depends_on:
+      - mongo
+    restart: always
+
+  # خدمة قاعدة البيانات
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: always
+
+  # خدمة موقع الويب
+  website:
+    build: ./website
+    ports:
+      - "80:80"
+    environment:
+      - API_URL=http://backend:8080
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  mongo-data:
